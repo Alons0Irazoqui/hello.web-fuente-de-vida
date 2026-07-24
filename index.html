@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuente de Vida Nueva AC | Hogar de Rehabilitación en Adicciones y Alcoholismo</title>
+  <meta name="description" content="Hogar de Rehabilitación Fuente de Vida Nueva AC: 20 años de experiencia en rehabilitación de alcoholismo, adicciones y problemas emocionales, con un modelo integral que sana cuerpo, mente y espíritu.">
+  <meta name="keywords" content="rehabilitación de adicciones, clínica de rehabilitación de alcoholismo, centro de rehabilitación, tratamiento de adicciones, farmacodependencia, 12 pasos, hogar de rehabilitación, Fuente de Vida Nueva AC">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Fuente de Vida Nueva AC | Hogar de Rehabilitación en Adicciones">
+  <meta property="og:description" content="20 años de experiencia acompañando procesos de rehabilitación de alcoholismo y adicciones, con un modelo integral de cuerpo, mente y espíritu.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="images/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <img src="images/logo.png" alt="">
+      <div class="loader-ring"></div>
+    </div>
+    <span class="loader-word">Fuente de Vida Nueva</span>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Fuente de Vida Nueva AC — inicio">
+          <img src="images/logo.png" alt="Fuente de Vida Nueva AC, Hogar de Rehabilitación">
+          <span class="nav-logo-text">
+            <strong>Fuente de Vida Nueva</strong>
+            <span>Hogar de Rehabilitación · AC</span>
+          </span>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#especializacion">Modelo</a></li>
+            <li><a href="#metodologia">Enfoque</a></li>
+            <li><a href="#metodo-recuperacion">Método</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+            <li><a href="#admision">Proceso</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/525558387066?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="btn-primary nav-cta" style="font-size:13px; padding:12px 26px;">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Escríbenos</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-backdrop" id="menu-backdrop"></div>
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#especializacion">Modelo Mixto</a>
+      <a href="#metodologia">Enfoque</a>
+      <a href="#metodo-recuperacion">Método de recuperación</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#admision">Proceso</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <div class="hero-bg" role="img" aria-label="Sendero entre montañas al amanecer, símbolo de un camino de sanación y nuevo comienzo"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            <span data-typewriter="Un nuevo comienzo es posible"></span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Hay un camino</span></span>
+            <span class="line"><span>de regreso</span></span>
+            <span class="line"><span class="accent">a la vida.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Hogar de Rehabilitación <strong>Fuente de Vida Nueva AC</strong> acompaña a personas y familias en su proceso de recuperación del alcoholismo, las adicciones y otros problemas emocionales, con un tratamiento profesional, humano y espiritual.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/525558387066?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20rehabilitaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>Solicitar información por WhatsApp</span>
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#especializacion" class="btn-outline">
+              <i class="fa-regular fa-compass" style="font-size:15px;"></i>
+              <span>Conocer nuestro modelo</span>
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-award"></i>
+              20 años de experiencia
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+              Modelo Cuerpo · Mente · Espíritu
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-house-chimney-heart"></i>
+              Espacio seguro y digno
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         POR QUÉ ELEGIRNOS
+    ══════════════════════════════════════════════════ -->
+    <section id="nosotros" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              La rehabilitación no es solo dejar de consumir…
+              <em>es reconstruir una vida con sentido.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Acompañamos a personas y familias a recuperar el control de su vida, con un modelo que va mucho más allá de la desintoxicación.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>20 años de experiencia</h3>
+            <p>Dos décadas respaldando la rehabilitación del alcoholismo, las adicciones y otros problemas emocionales, con un trabajo que se sostiene en el tiempo.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+            </div>
+            <h3>Modelo mixto integral</h3>
+            <p>No fragmentamos el tratamiento: cada paciente avanza en las tres dimensiones que sostienen una recuperación real.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>Equipo multidisciplinario</h3>
+            <p>Atención psicológica, valoración psiquiátrica y consejería especializada te acompañan en cada etapa del tratamiento.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3>Un proyecto de vida real</h3>
+            <p>No solo trabajamos la abstinencia: ayudamos a construir un proyecto de vida con propósito, hábitos y disciplina.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FILOSOFÍA — quote break (fixed bg)
+    ══════════════════════════════════════════════════ -->
+    <section id="filosofia" aria-labelledby="filosofia-heading">
+      <div class="container">
+        <div class="filosofia-inner reveal">
+          <img class="filosofia-mark" src="images/logo.png" alt="" aria-hidden="true">
+          <h2 class="filosofia-quote" id="filosofia-heading">
+            Nuestro compromiso es brindar un espacio <strong>seguro, digno, cómodo y de calidad</strong> para acompañar a cada paciente en su proceso de rehabilitación y transformación personal.
+          </h2>
+          <div class="filosofia-attr">Nuestro compromiso · Fuente de Vida Nueva AC</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MODELO DE REHABILITACIÓN MIXTO
+    ══════════════════════════════════════════════════ -->
+    <section id="especializacion" aria-labelledby="esp-heading">
+      <div class="container">
+
+        <div class="especial-top">
+          <div class="reveal">
+            <div class="label">Nuestro modelo</div>
+            <h2 class="section-title" id="esp-heading">
+              Un modelo de rehabilitación<br>
+              <span class="accent">mixto e integral</span>
+            </h2>
+          </div>
+          <p class="section-lead reveal d2">
+            El tratamiento se sostiene en tres bases fundamentales que trabajan de manera conjunta durante todo el proceso de recuperación.
+          </p>
+        </div>
+
+        <div class="especial-grid">
+
+          <div class="esp-card tone-dark reveal">
+            <div class="esp-icon" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Cuerpo</h3>
+            <p>Desintoxicación, ejercicio, higiene y terapéuticas del bienestar integral para recuperar la salud física.</p>
+          </div>
+
+          <div class="esp-card tone-terra reveal d1">
+            <div class="esp-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+            <h3>Mental</h3>
+            <p>Tratamiento psicológico, psicosocial y emocional profesional que acompaña cada etapa del proceso.</p>
+          </div>
+
+          <div class="esp-card tone-sky reveal d2">
+            <div class="esp-icon" aria-hidden="true"><i class="fa-solid fa-dove"></i></div>
+            <h3>Espíritu</h3>
+            <p>Principios espirituales, valores universales, sentido de vida y desarrollo espiritual como sostén del cambio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ENFOQUE
+    ══════════════════════════════════════════════════ -->
+    <section id="metodologia" aria-labelledby="meto-heading">
+      <div class="container">
+        <div class="meto-wrap">
+
+          <div class="reveal">
+            <div class="label">Nuestro enfoque</div>
+            <h2 class="section-title" id="meto-heading">
+              Rehabilitación es<br>
+              <span class="accent">reconstruir una vida</span>
+            </h2>
+            <p class="meto-lead">
+              Creemos que la verdadera recuperación va mucho más allá de dejar de consumir. Trabajamos en la adquisición y reconstrucción de hábitos saludables, el fomento de la disciplina y el desarrollo de habilidades para la vida, en todas las áreas del paciente.
+            </p>
+
+            <div class="pillars" role="list">
+              <div class="pillar" role="listitem">
+                <div class="pillar-num" aria-hidden="true">01</div>
+                <div>
+                  <h4>Hábitos saludables</h4>
+                  <p>Acompañamos la adquisición y reconstrucción de hábitos saludables y el fomento de la disciplina personal como base de la recuperación.</p>
+                </div>
+              </div>
+              <div class="pillar" role="listitem">
+                <div class="pillar-num" aria-hidden="true">02</div>
+                <div>
+                  <h4>Habilidades para la vida</h4>
+                  <p>Desarrollamos herramientas prácticas que permiten a cada paciente enfrentar su día a día con autonomía y confianza.</p>
+                </div>
+              </div>
+              <div class="pillar" role="listitem">
+                <div class="pillar-num" aria-hidden="true">03</div>
+                <div>
+                  <h4>Proyecto de vida</h4>
+                  <p>Elaboramos junto al paciente un proyecto de vida personal a corto, mediano y largo plazo, en todas las áreas que la componen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meto-visual reveal d2">
+            <div class="meto-img-wrap" role="img" aria-label="Sendero iluminado entre árboles, símbolo de un camino de transformación personal">
+              <div class="meto-content">
+                <h3>Un espacio para reconstruir el camino.</h3>
+                <p>Cada etapa del proceso está pensada para acompañar al paciente hacia una vida con propósito, disciplina y sentido.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MÉTODO DE RECUPERACIÓN
+    ══════════════════════════════════════════════════ -->
+    <section id="metodo-recuperacion" aria-labelledby="metodo-heading">
+      <div class="container">
+
+        <div class="reveal" style="max-width:600px; margin-bottom:48px;">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="metodo-heading">
+            Método de<br>
+            <span class="accent">recuperación</span>
+          </h2>
+          <p class="section-lead">Un método integral que combina atención clínica profesional con herramientas de transformación personal en cada etapa del tratamiento.</p>
+        </div>
+
+        <div class="equipo-band reveal">
+          <div class="equipo-list">
+            <div class="equipo-row">
+              <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+              <div>
+                <h4>Atención psicológica profesional</h4>
+                <p>Evaluación y terapia a cargo de profesionales especializados en el tratamiento de adicciones.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-notes-medical" aria-hidden="true"></i>
+              <div>
+                <h4>Valoración psiquiátrica</h4>
+                <p>Seguimiento médico especializado para acompañar el proceso de manera responsable.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-comments" aria-hidden="true"></i>
+              <div>
+                <h4>Consejería especializada en adicciones</h4>
+                <p>Acompañamiento cercano y experto, enfocado en las particularidades de cada tipo de dependencia.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-road" aria-hidden="true"></i>
+              <div>
+                <h4>12 pasos para la recuperación personal</h4>
+                <p>Un programa reconocido a nivel mundial como guía para sostener la recuperación a largo plazo.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+              <div>
+                <h4>Formación en hábitos y disciplina</h4>
+                <p>Herramientas prácticas para reconstruir una rutina de vida saludable y sostenible.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <div>
+                <h4>Terapias individuales y grupales</h4>
+                <p>Espacios de trabajo personal y comunitario que fortalecen el proceso de cada paciente.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+              <div>
+                <h4>Superación personal</h4>
+                <p>Un acompañamiento enfocado en el crecimiento y la transformación integral de cada persona.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="equipo-note">
+            ¿Quieres conocer a detalle cómo se combinan estas herramientas en un plan de tratamiento? Escríbenos por WhatsApp y con gusto te explicamos el proceso.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         NUESTRAS INSTALACIONES
+    ══════════════════════════════════════════════════ -->
+    <section id="instalaciones" aria-labelledby="instalaciones-heading">
+      <div class="container">
+
+        <div class="reveal" style="max-width:600px; margin-bottom:52px;">
+          <div class="label">Nuestras instalaciones</div>
+          <h2 class="section-title" id="instalaciones-heading">
+            Un espacio pensado para <span class="accent">sanar</span>
+          </h2>
+        </div>
+
+        <div class="instalaciones-feature">
+          <figure class="inst-img-frame reveal">
+            <img src="images/interior-recepcion.jpg" alt="Área de atención y recepción en las instalaciones de Fuente de Vida Nueva AC, con reconocimientos y certificaciones del equipo">
+            <figcaption class="inst-caption">Área de atención y acompañamiento en nuestras instalaciones.</figcaption>
+          </figure>
+          <div class="inst-text reveal d2">
+            <h3>Un vistazo a nuestro espacio</h3>
+            <p>Contamos con áreas de atención acondicionadas para acompañar tanto las sesiones terapéuticas como los momentos de convivencia y descanso de cada paciente.</p>
+            <p>Cada espacio está pensado para sostener el proceso de recuperación con calidez y profesionalismo, día a día.</p>
+            <div class="inst-badges">
+              <div class="inst-badge"><i class="fa-solid fa-comments"></i> Área de atención</div>
+              <div class="inst-badge"><i class="fa-solid fa-people-group"></i> Espacio de convivencia</div>
+              <div class="inst-badge"><i class="fa-solid fa-mug-hot"></i> Ambiente cálido</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO DE ADMISIÓN
+    ══════════════════════════════════════════════════ -->
+    <section id="admision" aria-labelledby="admision-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Primer paso</div>
+          <h2 class="section-title" id="admision-heading" style="color:var(--white);">
+            Un proceso <span class="accent">simple y acompañado</span>
+          </h2>
+          <p>Sabemos que dar el primer paso no es fácil. Por eso te acompañamos desde el primer contacto.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Contacto confidencial</h3>
+            <p>Escríbenos por WhatsApp o llama al 55 5838 7066. Escuchamos tu situación y resolvemos tus dudas.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Valoración inicial</h3>
+            <p>Realizamos una evaluación profesional para conocer la situación del paciente y su contexto familiar.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Plan personalizado</h3>
+            <p>Diseñamos un plan de tratamiento basado en nuestro modelo mixto: cuerpo, mente y espíritu.</p>
+          </div>
+
+          <div class="proceso-step reveal d3">
+            <div class="step-number">Paso 04</div>
+            <h3>Acompañamiento continuo</h3>
+            <p>Iniciamos el proceso de rehabilitación con seguimiento constante durante cada etapa.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         COMPROMISOS / NÚMEROS
+    ══════════════════════════════════════════════════ -->
+    <section id="compromisos" aria-label="Nuestros números">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="20" data-suffix="" aria-label="20">0</div>
+            <div class="stat-lbl">Años de experiencia<br>en rehabilitación</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" data-suffix="" aria-label="3">0</div>
+            <div class="stat-lbl">Pilares de nuestro<br>modelo mixto</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="7" data-suffix="" aria-label="7">0</div>
+            <div class="stat-lbl">Herramientas de nuestro<br>método de recuperación</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROBLEMÁTICAS ATENDIDAS
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">A quién ayudamos</div>
+          <h2 class="section-title" id="sec-heading">
+            Problemáticas que <span class="accent">atendemos</span>
+          </h2>
+          <p>Brindamos acompañamiento profesional para quienes enfrentan procesos de dependencia y sus consecuencias emocionales.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-wine-bottle"></i></div>
+            <h3>Alcoholismo</h3>
+            <p>Acompañamiento integral para superar la dependencia al alcohol y reconstruir hábitos saludables.</p>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-pills"></i></div>
+            <h3>Drogadicción y farmacodependencia</h3>
+            <p>Tratamiento profesional para procesos de dependencia a sustancias y su impacto físico y emocional.</p>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <div class="sector-icon" aria-hidden="true"><i class="fa-solid fa-vial"></i></div>
+            <h3>Consumo de sustancias psicoactivas</h3>
+            <p>Atención especializada para distintos tipos de consumo problemático, con un enfoque humano y profesional.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════════ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="reveal" style="text-align:center; max-width:640px; margin:0 auto 56px;">
+          <div class="label" style="justify-content:center;">Preguntas frecuentes</div>
+          <h2 class="section-title" id="faq-heading">
+            Resolvemos tus <span class="accent">dudas</span>
+          </h2>
+        </div>
+
+        <div class="faq-wrap reveal">
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Qué diferencia a Fuente de Vida Nueva AC de otros centros?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Contamos con 20 años de experiencia y un modelo mixto que trabaja el cuerpo, la mente y el espíritu de cada paciente, no solo la abstinencia de sustancias.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿En qué consiste el modelo de tratamiento?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Combinamos atención psicológica profesional, valoración psiquiátrica, consejería especializada en adicciones, el programa de 12 pasos, terapias individuales y grupales, y formación en hábitos y disciplina.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cómo es el primer contacto?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Puedes escribirnos por WhatsApp o llamar al 55 5838 7066. Escuchamos tu situación y te orientamos sobre los siguientes pasos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Solo atienden alcoholismo?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>No. Atendemos alcoholismo, drogadicción y farmacodependencia, así como el consumo de sustancias psicoactivas y otros problemas emocionales asociados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿La familia participa en el proceso?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>El proceso de rehabilitación considera el acompañamiento cercano al paciente, con comunicación constante para sostener su recuperación.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cuál es la duración y el costo del tratamiento?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Cada proceso es distinto porque cada paciente lo es. Contáctanos por WhatsApp o al 55 5838 7066 y con gusto te compartimos información detallada.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading" style="color:var(--white);">
+            Hablemos, <span class="accent">estamos para ayudarte</span>
+          </h2>
+          <p>Escríbenos y con gusto te orientamos sobre nuestro modelo de rehabilitación.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <div class="contact-info">
+            <h3>Informes y atención</h3>
+            <p class="ci-sub">Dar el primer paso puede cambiarlo todo. Contáctanos con confianza.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono / Informes</h4>
+                  <p><a href="tel:+525558387066">55 5838 7066</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos directamente para recibir información.</p>
+                  <a href="https://wa.me/525558387066?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Facebook</h4>
+                  <p><a href="https://www.facebook.com/share/1EWH9r3sDD/" target="_blank" rel="noopener noreferrer">Síguenos y conoce más sobre nuestro trabajo →</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Experiencia</h4>
+                  <p>Dos décadas de trayectoria respaldan cada tratamiento que iniciamos.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="ci-socials">
+              <a href="https://www.facebook.com/share/1EWH9r3sDD/" target="_blank" rel="noopener noreferrer" class="ci-soc" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://wa.me/525558387066" target="_blank" rel="noopener noreferrer" class="ci-soc" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="ci-privacy">
+              La información que nos compartas por este medio será utilizada únicamente para brindarte orientación sobre nuestros servicios de rehabilitación.
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar información</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Tu nombre" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-relation">Eres...</label>
+                  <select id="f-relation" class="form-control">
+                    <option>Paciente</option>
+                    <option>Familiar</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-phone">Teléfono de contacto</label>
+                <input type="tel" id="f-phone" class="form-control"
+                       placeholder="Ej. 55 0000 0000" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos brevemente tu situación</label>
+                <textarea id="f-msg" class="form-control" rows="4"
+                          placeholder="Lo que compartas aquí nos ayuda a orientarte mejor…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar información por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido(a) a WhatsApp para continuar la conversación directamente con nosotros.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Fuente de Vida Nueva AC, Hogar de Rehabilitación">
+          </div>
+          <p class="footer-tagline">Un hogar de esperanza, disciplina y nuevos comienzos. 20 años acompañando procesos de rehabilitación y transformación personal.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#especializacion">Modelo Mixto</a></li>
+            <li><a href="#metodologia">Enfoque</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Recursos</h5>
+          <ul>
+            <li><a href="#metodo-recuperacion">Método de recuperación</a></li>
+            <li><a href="#admision">Proceso de admisión</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:+525558387066">55 5838 7066</a></li>
+            <li><a href="https://wa.me/525558387066" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/share/1EWH9r3sDD/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-inner">
+        <p class="footer-tagline" style="max-width:none; margin:0;">Hogar de Rehabilitación Fuente de Vida Nueva AC</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/1EWH9r3sDD/" target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/525558387066" target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-privacy">
+          <strong>Aviso de confidencialidad:</strong> en Fuente de Vida Nueva AC tratamos con respeto y discreción la información de nuestros pacientes y sus familias, dada la naturaleza sensible de nuestros servicios.
+        </p>
+        <p class="footer-copy">&copy; <span id="year"></span> Fuente de Vida Nueva AC. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/525558387066?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
