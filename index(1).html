@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enalma | Clínica de Rehabilitación en Adicciones para Adolescentes · Los Mochis</title>
+  <meta name="description" content="Enalma es una clínica especializada en rehabilitación de adicciones para adolescentes mujeres de 11 a 17 años en Los Mochis, Sinaloa. Atención confidencial, profesional y con calidez humana para tu hija y tu familia.">
+  <meta name="keywords" content="clínica de rehabilitación en adicciones, rehabilitación adolescentes, tratamiento de adicciones para mujeres, clínica de adicciones Los Mochis, Sinaloa, Enalma, terapia adolescentes 11 a 17 años, ayuda confidencial para adicciones">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.clinicaenalma.com/">
+
+  <meta property="og:title" content="Enalma | Clínica de Rehabilitación en Adicciones para Adolescentes">
+  <meta property="og:description" content="Un espacio confidencial y profesional para adolescentes mujeres de 11 a 17 años en proceso de rehabilitación, y para las familias que las acompañan.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="images/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <img src="images/icon.png" alt="">
+      <div class="loader-ring"></div>
+    </div>
+    <span class="loader-word">Enalma</span>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Enalma — inicio">
+          <img class="logo-for-dark" src="images/logo-oscuro-lockup.png" alt="Enalma, Clínica de Rehabilitación en Adicciones">
+          <img class="logo-for-light" src="images/logo.png" alt="Enalma, Clínica de Rehabilitación en Adicciones">
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#especializacion">Especialización</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+            <li><a href="#admision">Admisión</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-primary nav-cta" style="font-size:13px; padding:12px 26px;">
+          Consulta Confidencial
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-backdrop" id="menu-backdrop"></div>
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#especializacion">Especialización</a>
+      <a href="#metodologia">Metodología</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#admision">Admisión</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Consulta Confidencial →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <div class="hero-bg" role="img" aria-label="Sendero soleado entre árboles, simbolizando un camino de sanación"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            <span>Clínica de Rehabilitación en Adicciones · Los Mochis, Sin.</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Un refugio</span></span>
+            <span class="line"><span>para el alma</span></span>
+            <span class="line"><span class="accent">de tu hija.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Tratamiento <strong>especializado y confidencial</strong> para adolescentes mujeres de 11 a 17 años que viven un proceso de adicción, y acompañamiento cercano para la familia que las sostiene.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-primary">
+              <span>Solicitar información confidencial</span>
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#metodologia" class="btn-outline">
+              <i class="fa-regular fa-compass" style="font-size:15px;"></i>
+              <span>Conocer nuestro modelo</span>
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-lock"></i>
+              Confidencialidad garantizada
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-user-doctor"></i>
+              Equipo multidisciplinario
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Los Mochis, Sinaloa
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         POR QUÉ ENALMA
+    ══════════════════════════════════════════════════ -->
+    <section id="nosotros" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué Enalma</div>
+            <h2 class="why-quote" id="why-heading">
+              La diferencia no está solo en el tratamiento…
+              <em> está en cómo se acompaña a cada familia.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Enalma nació para ofrecer un espacio donde la rehabilitación se vive con dignidad, cercanía y profesionalismo — nunca con juicio ni estigma.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-venus"></i>
+            </div>
+            <h3>Especialización real</h3>
+            <p>Atendemos exclusivamente a adolescentes mujeres de 11 a 17 años. Nuestro modelo está diseñado para esta etapa y esta población, no adaptado de uno genérico.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3>Contención clínica y humana</h3>
+            <p>Un equipo multidisciplinario acompaña cada caso con rigor profesional, pero también con la calidez que este momento de vida necesita.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3>Confidencialidad absoluta</h3>
+            <p>Cada conversación, cada dato y cada proceso se maneja con estricta privacidad. Tu tranquilidad es parte del tratamiento.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <h3>La familia también importa</h3>
+            <p>No solo tratamos a la paciente: acompañamos a madres, padres y tutores a lo largo de todo el proceso de sanación.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FILOSOFÍA — quote break
+    ══════════════════════════════════════════════════ -->
+    <section id="filosofia" aria-labelledby="filosofia-heading">
+      <div class="container">
+        <div class="filosofia-inner reveal">
+          <img class="filosofia-mark" src="images/icon-oscuro.png" alt="" aria-hidden="true">
+          <h2 class="filosofia-quote" id="filosofia-heading">
+            Enalma es más que una clínica: es un <strong>refugio</strong> donde el alma encuentra paz, comprensión y propósito. Creemos que sanar es también un acto de conexión — con una misma, con los demás y con la vida.
+          </h2>
+          <div class="filosofia-attr">Filosofía Enalma</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ESPECIALIZACIÓN — a quién atendemos
+    ══════════════════════════════════════════════════ -->
+    <section id="especializacion" aria-labelledby="esp-heading">
+      <div class="container">
+
+        <div class="especial-top">
+          <div class="reveal">
+            <div class="label">A quién atendemos</div>
+            <h2 class="section-title" id="esp-heading">
+              Un modelo pensado<br>
+              <span class="accent">para esta etapa, para ellas</span>
+            </h2>
+          </div>
+          <p class="section-lead reveal d2">
+            No somos una clínica general que atiende adolescentes: somos un espacio construido específicamente para su realidad.
+          </p>
+        </div>
+
+        <div class="especial-grid">
+
+          <div class="esp-card tone-dark reveal">
+            <div class="esp-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></div>
+            <h3>11 a 17 años</h3>
+            <p>Atendemos exclusivamente a adolescentes en esta etapa clave del desarrollo, con un enfoque adaptado a sus necesidades emocionales, familiares y escolares.</p>
+          </div>
+
+          <div class="esp-card tone-terra reveal d1">
+            <div class="esp-icon" aria-hidden="true"><i class="fa-solid fa-venus"></i></div>
+            <h3>Población femenina</h3>
+            <p>Un espacio diseñado específicamente para mujeres adolescentes, con dinámicas de grupo y contención acordes a su etapa de vida.</p>
+          </div>
+
+          <div class="esp-card tone-sky reveal d2">
+            <div class="esp-icon" aria-hidden="true"><i class="fa-solid fa-people-arrows"></i></div>
+            <h3>Atención integral</h3>
+            <p>Acompañamos tanto a la paciente como a su familia durante todo el proceso, con un trato cercano, honesto y profesional.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         METODOLOGÍA
+    ══════════════════════════════════════════════════ -->
+    <section id="metodologia" aria-labelledby="meto-heading">
+      <div class="container">
+        <div class="meto-wrap">
+
+          <div class="reveal">
+            <div class="label">Nuestro enfoque</div>
+            <h2 class="section-title" id="meto-heading">
+              Tres conexiones<br>
+              <span class="accent">que sostienen el proceso</span>
+            </h2>
+            <p class="meto-lead">
+              Nuestro modelo terapéutico se sostiene en la filosofía que nos define: sanar es reconstruir vínculos. Cada fase del acompañamiento en Enalma trabaja sobre estos tres pilares.
+            </p>
+
+            <div class="pillars" role="list">
+              <div class="pillar" role="listitem">
+                <div class="pillar-num" aria-hidden="true">01</div>
+                <div>
+                  <h4>Conexión con una misma</h4>
+                  <p>Espacio para el autoconocimiento y el procesamiento emocional, en un entorno seguro y sin juicio.</p>
+                </div>
+              </div>
+              <div class="pillar" role="listitem">
+                <div class="pillar-num" aria-hidden="true">02</div>
+                <div>
+                  <h4>Conexión con los demás</h4>
+                  <p>Comunidad terapéutica, vínculos familiares sanos y herramientas para relacionarse desde la confianza.</p>
+                </div>
+              </div>
+              <div class="pillar" role="listitem">
+                <div class="pillar-num" aria-hidden="true">03</div>
+                <div>
+                  <h4>Conexión con la vida</h4>
+                  <p>Propósito, proyecto de vida y reintegración a la escuela, la familia y la comunidad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meto-visual reveal d2">
+            <div class="meto-img-wrap" role="img" aria-label="Amanecer cálido sobre las montañas, símbolo de un nuevo comienzo">
+              <div class="meto-content">
+                <h3>Un entorno sereno para acompañar cada paso.</h3>
+                <p>La imagen de la montaña refuerza el sentido de calma, progreso y esperanza que buscamos sostener en cada proceso terapéutico.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         EQUIPO / CREDENCIALES
+    ══════════════════════════════════════════════════ -->
+    <section id="equipo" aria-labelledby="equipo-heading">
+      <div class="container">
+
+        <div class="reveal" style="max-width:600px; margin-bottom:48px;">
+          <div class="label">Equipo profesional</div>
+          <h2 class="section-title" id="equipo-heading">
+            Acompañamiento<br>
+            <span class="accent">clínico multidisciplinario</span>
+          </h2>
+        </div>
+
+        <div class="equipo-band reveal">
+          <div class="equipo-list">
+            <div class="equipo-row">
+              <i class="fa-solid fa-brain" aria-hidden="true"></i>
+              <div>
+                <h4>Psicología clínica</h4>
+                <p>Evaluación y terapia individual enfocada en adolescentes.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <div>
+                <h4>Terapia familiar</h4>
+                <p>Sesiones para reconstruir la comunicación y el vínculo con madres, padres y tutores.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <div>
+                <h4>Acompañamiento educativo</h4>
+                <p>Seguimiento para que el proceso académico de tu hija se vea afectado lo menos posible.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-notes-medical" aria-hidden="true"></i>
+              <div>
+                <h4>Valoración médica</h4>
+                <p>Supervisión del estado de salud general durante todo el tratamiento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p style="color:var(--gray); font-size:15px; line-height:1.8;">
+              Cada integrante de nuestro equipo participa activamente en el proceso terapéutico, con reuniones de seguimiento periódicas para ajustar el plan de tu hija según su evolución.
+            </p>
+            <div class="equipo-note">
+              ¿Buscas conocer las cédulas profesionales y certificaciones específicas de nuestro equipo? Escríbenos y con gusto te las compartimos de forma directa y verificable.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         NUESTRAS INSTALACIONES
+    ══════════════════════════════════════════════════ -->
+    <section id="instalaciones" aria-labelledby="instalaciones-heading">
+      <div class="container">
+
+        <div class="reveal">
+          <div class="label">Nuestras instalaciones</div>
+          <h2 class="section-title" id="instalaciones-heading">Nuestras instalaciones</h2>
+          <p class="section-lead reveal d2">Algunas fotografías de la clínica y sus espacios: fachada, sala de sesiones, oficinas y dormitorios. Las imágenes ayudan a transmitir el ambiente cálido y seguro de Enalma.</p>
+        </div>
+
+        <div class="instalaciones-grid reveal d1" role="list">
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-01.jpg" alt="Fachada de Enalma">
+          </figure>
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-02.jpg" alt="Sala de sesiones">
+          </figure>
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-03.jpg" alt="Oficina / consultorio">
+          </figure>
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-04.jpg" alt="Dormitorio con literas">
+          </figure>
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-05.jpg" alt="Espacio común">
+          </figure>
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-06.jpg" alt="Detalle de mobiliario">
+          </figure>
+          <figure class="instalacion-fig" role="listitem">
+            <img src="images/instalaciones-07.jpg" alt="Jardín o área exterior">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ACOMPAÑAMIENTO CLÍNICO — MULTIDISCIPLINARIO
+    ══════════════════════════════════════════════════ -->
+    <section id="acompanamiento-clinico" aria-labelledby="acompanamiento-heading">
+      <div class="container">
+
+        <div class="reveal">
+          <div class="label">Equipo profesional</div>
+          <h2 class="section-title" id="acompanamiento-heading">Acompañamiento clínico — Multidisciplinario</h2>
+          <p class="section-lead reveal d2">Nuestro equipo trabaja de manera integrada para ofrecer un abordaje clínico completo: cada disciplina aporta desde su campo para el bienestar de la paciente y la familia.</p>
+        </div>
+
+        <div class="equipo-band reveal d1">
+          <div class="equipo-list">
+            <div class="equipo-row">
+              <i class="fa-solid fa-brain" aria-hidden="true"></i>
+              <div>
+                <h4>Psicología clínica</h4>
+                <p>Evaluación y terapia individual enfocada en adolescentes.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <div>
+                <h4>Terapia familiar</h4>
+                <p>Sesiones para reconstruir la comunicación y el vínculo con madres, padres y tutores.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <div>
+                <h4>Acompañamiento educativo</h4>
+                <p>Seguimiento para minimizar el impacto académico durante el proceso.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-notes-medical" aria-hidden="true"></i>
+              <div>
+                <h4>Valoración médica</h4>
+                <p>Supervisión del estado de salud general durante todo el tratamiento.</p>
+              </div>
+            </div>
+            <div class="equipo-row">
+              <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+              <div>
+                <h4>Valoración y educación nutricional</h4>
+                <p>Evaluación nutricional y acompañamiento para promover hábitos saludables durante el tratamiento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO DE ADMISIÓN
+    ══════════════════════════════════════════════════ -->
+    <section id="admision" aria-labelledby="admision-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Primer paso</div>
+          <h2 class="section-title" id="admision-heading">
+            Un proceso <span class="accent">simple y acompañado</span>
+          </h2>
+          <p>Sabemos que dar el primer paso no es fácil. Por eso lo hicimos lo más claro y humano posible.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Contacto confidencial</h3>
+            <p>Nos escribes por WhatsApp o llamada. Escuchamos tu situación sin compromiso ni presión.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Valoración inicial</h3>
+            <p>Agendamos una entrevista con la familia y una evaluación profesional de la paciente.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Plan personalizado</h3>
+            <p>Diseñamos un plan de acompañamiento a la medida de tu hija y de tu familia.</p>
+          </div>
+
+          <div class="proceso-step reveal d3">
+            <div class="step-number">Paso 04</div>
+            <h3>Acompañamiento continuo</h3>
+            <p>Iniciamos el proceso con seguimiento constante y comunicación cercana contigo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         COMPROMISOS
+    ══════════════════════════════════════════════════ -->
+    <section id="compromisos" aria-label="Nuestros compromisos">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100%">0</div>
+            <div class="stat-lbl">Confidencialidad<br>en cada proceso</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" data-suffix="" aria-label="3">0</div>
+            <div class="stat-lbl">Pilares en nuestro<br>modelo terapéutico</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100%">0</div>
+            <div class="stat-lbl">Especialización en<br>población femenina 11–17</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         QUIÉN PUEDE ACOMPAÑARTE
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Red de apoyo</div>
+          <h2 class="section-title" id="sec-heading">
+            ¿Quién puede dar <span class="accent">el primer paso?</span>
+          </h2>
+          <p>Enalma trabaja de la mano con quien ya está cuidando de ella.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-people-roof sector-icon" aria-hidden="true"></i>
+            <h3>Madres y padres</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-user-shield sector-icon" aria-hidden="true"></i>
+            <h3>Tutores legales</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-brain sector-icon" aria-hidden="true"></i>
+            <h3>Psicólogos y terapeutas</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-school sector-icon" aria-hidden="true"></i>
+            <h3>Escuelas</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-stethoscope sector-icon" aria-hidden="true"></i>
+            <h3>Médicos familiares</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════════ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 56px;">
+          <div class="label" style="justify-content:center;">Preguntas frecuentes</div>
+          <h2 class="section-title" id="faq-heading">
+            Resolvemos tus <span class="accent">dudas</span>
+          </h2>
+        </div>
+
+        <div class="faq-wrap reveal">
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿La información que comparto es confidencial?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Sí. Toda la información que compartes con nosotros —por teléfono, WhatsApp o en consulta— se trata con estricta confidencialidad, conforme a nuestro compromiso de privacidad.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Qué acompañamiento reciben las familias?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Las familias participan activamente del proceso mediante terapia familiar y comunicación constante con el equipo clínico. Nadie atraviesa esto en soledad.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cómo es el primer contacto?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Escríbenos por WhatsApp o llena el formulario de contacto. Un miembro de nuestro equipo te responderá de forma confidencial para escuchar tu situación y orientarte sobre los siguientes pasos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Puedo conocer las instalaciones antes de decidir?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Por supuesto. Podemos coordinar una visita para que conozcas el espacio y a parte de nuestro equipo antes de tomar una decisión.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cuál es el costo y la duración del programa?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Cada proceso es distinto porque cada paciente lo es. Contáctanos y con gusto te compartimos información detallada y personalizada según tu situación, de forma confidencial.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              ¿Atienden solo a mujeres adolescentes?
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Sí. Enalma está especializado exclusivamente en la atención de adolescentes mujeres de 11 a 17 años, lo que nos permite diseñar un modelo verdaderamente adaptado a esta población.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos, <span class="accent">con confidencialidad</span>
+          </h2>
+          <p>Escríbenos y te responderemos de forma privada y a la brevedad posible.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <div class="contact-info">
+            <h3>Atención Confidencial</h3>
+            <p class="ci-sub">Cada consulta es tratada con discreción, respeto y sin ningún juicio.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>3er Retorno Cerro Rodadero #1929,<br>
+                     Fracc. Centro Plaza,<br>
+                     Los Mochis, Sinaloa.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p><a href="tel:+526683244417">(668) 324 4417</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos directamente, de forma confidencial.</p>
+                  <a href="https://wa.me/526683244417?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20confidencial." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Instagram</h4>
+                  <p><a href="https://www.instagram.com/clinicaenalma" target="_blank" rel="noopener noreferrer">@clinicaenalma · servicios y orientación confidencial</a></p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="ci-privacy">
+              La información que nos compartas por este medio es tratada de forma estrictamente confidencial y solo será utilizada para brindarte orientación sobre nuestros servicios.
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar información</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Tu nombre" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-relation">Eres...</label>
+                  <select id="f-relation" class="form-control">
+                    <option>Madre o padre</option>
+                    <option>Tutor(a) legal</option>
+                    <option>Profesional que deriva un caso</option>
+                    <option>Otro familiar</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-phone">Teléfono de contacto</label>
+                <input type="tel" id="f-phone" class="form-control"
+                       placeholder="Ej. 668 000 0000" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos brevemente tu situación</label>
+                <textarea id="f-msg" class="form-control" rows="4"
+                          placeholder="Lo que compartas aquí es completamente confidencial…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido(a) a WhatsApp para continuar la conversación de forma privada.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="images/logo-oscuro-lockup.png" alt="Enalma, Clínica de Rehabilitación en Adicciones">
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/clinicaenalma" target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/526683244417" target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-privacy">
+          <strong>Aviso de confidencialidad:</strong> en Enalma tratamos con estricta privacidad toda la información de nuestras pacientes y sus familias, dada la naturaleza sensible de nuestros servicios. Aviso de privacidad completo disponible bajo solicitud.
+        </p>
+        <p class="footer-copy">&copy; <span id="year"></span> Enalma. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/526683244417?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20confidencial."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
