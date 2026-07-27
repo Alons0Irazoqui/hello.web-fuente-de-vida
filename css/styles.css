@@ -6,19 +6,19 @@
 ═══════════════════════════════════════════════════════════════ */
 
 :root{
-  --blue-deep:#1B4F72;
-  --blue-deep-2:#123A56;
-  --blue-sky:#5DA9E9;
-  --gold:#C9A227;
-  --gold-light:#E4C563;
-  --sunrise:#E8935B;
-  --white:#FFFFFF;
-  --cream:#FAF6EE;
+  --blue-deep:#0B6F73;
+  --blue-deep-2:#075A62;
+  --blue-sky:#2EB8B5;
+  --gold:#7FA64A;
+  --gold-light:#BBD77B;
+  --sunrise:#119DA4;
+  --white:#FCFFFD;
+  --cream:#EEF9F6;
   --ink:#2B2B2B;
   --gray:#5B6572;
   --gray-light:#8A93A0;
-  --navy-950:#0A1D2E;
-  --navy-900:#0F2A42;
+  --navy-950:#063A44;
+  --navy-900:#0B4F5A;
 
   --font-title:'Playfair Display', 'Georgia', serif;
   --font-body:'Inter', -apple-system, sans-serif;
@@ -42,7 +42,7 @@ html{scroll-behavior:smooth; scroll-padding-top:90px;}
 body{
   font-family:var(--font-body);
   color:var(--ink);
-  background:var(--white);
+  background:var(--cream);
   line-height:1.6;
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
@@ -396,16 +396,16 @@ body.loading{overflow:hidden;}
    SECTIONS — general spacing / bg rhythm
 ═══════════════════════════════════════════════════════════════ */
 section{padding:120px 0;}
-#nosotros{background:var(--white);}
+#nosotros{background:linear-gradient(180deg,var(--white),#F4FCFA);}
 #filosofia{padding:0;}
 #especializacion{background:var(--cream);}
-#metodologia{background:var(--white);}
-#metodo-recuperacion{background:var(--cream);}
-#instalaciones{background:var(--white);}
+#metodologia{background:#FBFFFE;}
+#metodo-recuperacion{background:#E8F6F2;}
+#instalaciones{background:#F8FEFC;}
 #admision{background:var(--navy-950); color:var(--white);}
 #compromisos{padding:0;}
-#sectores{background:var(--cream);}
-#faq{background:var(--white);}
+#sectores{background:#EEF9F6;}
+#faq{background:#FBFFFE;}
 #contacto{background:var(--navy-950); color:var(--white);}
 
 .why-header{display:flex; justify-content:space-between; gap:60px; align-items:flex-end; margin-bottom:64px; flex-wrap:wrap;}
@@ -558,6 +558,26 @@ section{padding:120px 0;}
   background:var(--cream); padding:10px 18px; border-radius:100px; border:1px solid rgba(27,79,114,.12);
 }
 .inst-badge i{color:var(--gold);}
+.inst-gallery{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+  margin-top:48px;
+}
+.inst-gallery-card{
+  position:relative; overflow:hidden; border-radius:var(--radius-sm);
+  background:var(--white); border:1px solid rgba(11,111,115,.14);
+  box-shadow:var(--shadow-sm);
+}
+.inst-gallery-card img{
+  width:100%; aspect-ratio:16/9; object-fit:cover;
+  transition:transform .7s var(--ease), filter .7s var(--ease);
+}
+.inst-gallery-card:hover img{transform:scale(1.05); filter:saturate(1.04);}
+.inst-gallery-card figcaption{
+  position:absolute; left:0; right:0; bottom:0;
+  padding:28px 18px 16px;
+  background:linear-gradient(0deg, rgba(6,58,68,.88), transparent);
+  color:var(--white); font-size:13px; font-weight:700; letter-spacing:.02em;
+}
 
 /* ─── Admision — proceso ─── */
 #admision{position:relative; overflow:hidden;}
@@ -760,6 +780,7 @@ footer::before{
   .especial-grid{grid-template-columns:repeat(1,1fr);}
   .meto-wrap{grid-template-columns:1fr; gap:48px;}
   .instalaciones-feature{grid-template-columns:1fr; gap:36px;}
+  .inst-gallery{grid-template-columns:repeat(2,1fr);}
   .proceso-grid{grid-template-columns:repeat(2,1fr);}
   .sectores-grid{grid-template-columns:repeat(2,1fr);}
   .contact-box{grid-template-columns:1fr; gap:44px;}
@@ -787,6 +808,7 @@ footer::before{
 @media (max-width:640px){
   .container{padding:0 20px;}
   .features-grid{grid-template-columns:1fr;}
+  .inst-gallery{grid-template-columns:1fr;}
   .proceso-grid{grid-template-columns:1fr;}
   .sectores-grid{grid-template-columns:1fr;}
   .hero-title{font-size:clamp(36px,11vw,52px);}
